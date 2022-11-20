@@ -7,6 +7,7 @@ public class Main {
         int clientDeviceYear = 2020;
         task1();
         printVersion(clientOS, clientDeviceYear);
+        printLeapYear(1917);
         task3(deliveryDistance);
     }
 
@@ -34,14 +35,16 @@ public class Main {
         return deliveryDays;
     }
 
-    public static void printLeapYear(int year) {
+    public static int printLeapYear(int year) {
 
         // Задание 1
+
         if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
             System.out.println(year + " - високосный");
         } else {
             System.out.println(year + " - не високосный");
         }
+        return year;
     }
 
     public static void printVersion(int clientOS, int clientDeviceYear) {
