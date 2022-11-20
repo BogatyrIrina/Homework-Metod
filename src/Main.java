@@ -5,22 +5,15 @@ public class Main {
         int deliveryDistance = 95;
         int clientOS = 0;
         int clientDeviceYear = 2020;
-        task1();
         printVersion(clientOS, clientDeviceYear);
         printLeapYear(1917);
         task3(deliveryDistance);
     }
 
-    private static void task1() {
-
-        System.out.println("Задание 1");
-
-        int currentYear = LocalDate.now().getYear();
-        printLeapYear(currentYear);
-    }
 
     private static int task3(int deliveryDistance) {
 
+        //Задание 3
         System.out.println("Задание 3");
 
         int deliveryDays = 1;
@@ -38,6 +31,7 @@ public class Main {
     public static int printLeapYear(int year) {
 
         // Задание 1
+        System.out.println("Задание 1");
 
         if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
             System.out.println(year + " - високосный");
@@ -50,6 +44,7 @@ public class Main {
     public static void printVersion(int clientOS, int clientDeviceYear) {
 
         // Задание 2
+        System.out.println("Задание 2");
 
         int currentYear = LocalDate.now().getYear();
 
