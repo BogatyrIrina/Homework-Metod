@@ -17,13 +17,7 @@ public class Main {
         System.out.println("Задание 3");
 
         int deliveryDays = 1;
-
-        if (deliveryDistance > 20) {
-            deliveryDays++;
-        }
-        if (deliveryDistance > 60) {
-            deliveryDays+=40;
-        }
+            deliveryDays = (deliveryDistance - 20)/40;
         System.out.println("Потребуется дней: " + deliveryDays);
         return deliveryDays;
     }
