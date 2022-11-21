@@ -2,7 +2,7 @@ import java.time.LocalDate;
 
 public class Main {
     public static void main(String[] args) {
-        int deliveryDistance = 30_000;
+        int deliveryDistance = 5;
         int clientOS = 0;
         int clientDeviceYear = 2020;
         printVersion(clientOS, clientDeviceYear);
@@ -17,7 +17,12 @@ public class Main {
         System.out.println("Задание 3");
 
         int deliveryDays = 1;
+        if (deliveryDistance > 20) {
+            deliveryDays++;
+        }
+        if (deliveryDistance > 60) {
             deliveryDays = (deliveryDistance - 20)/40;
+        }
         System.out.println("Потребуется дней: " + deliveryDays);
         return deliveryDays;
     }
